@@ -9,7 +9,7 @@ DAY_ROW=6
 TIME_COL=0
 DIFF=9
 GlobalRecord=None
-PATH= "F:\study history\cornell semester two\intro cloud\dataset"
+PATH= "dataset"
 
 class Record:
     gymName=""
@@ -45,7 +45,7 @@ def dataExtraction(path):
     dirList = os.listdir(path)
     filePathList = []
     for filename in dirList:
-        filePath=path+"\\" + filename
+        filePath=path + "/" + filename
         filePathList.append(filePath)
     record = dict()
 
